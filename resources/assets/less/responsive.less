@@ -1,0 +1,624 @@
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width : 320px) {
+    .navbar-default {
+        border-bottom: 1px solid #3b3a39;
+        background: @navbar-custom;
+        height: 60px;
+        .navbar-brand {
+            color: @brand-primary;
+            padding-top: 15px;
+
+            &.active,
+            &:active,
+            &:focus,
+            &:hover {
+                cursor: pointer;
+            }
+
+            .logo-img {
+                height: 30px;
+                margin-top: 0px;
+            }
+        }
+        a.navbar-brand {
+            padding-top: 10px;
+        }
+    }
+    .navbar-default .navbar-collapse {
+        border: 0px solid;
+    }
+
+    .nav {
+        padding-top: 38px;
+        background: @navbar-custom;
+        li {
+          a {
+            @extend heading-font;
+            line-height: 22px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+            &:focus,
+            &:hover {
+                color: #FFF;
+                outline: none;
+                border-bottom: 3px solid @brand-primary;
+            }
+          }
+        }
+    }
+    .navbar-nav {
+        margin: 0px -15px;
+        border: 0px solid;
+    }
+
+
+    // ============== header ====================
+    .header {
+        background: #000;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        opacity: 0.8;
+        @extend background-cover;
+        text-align: center;
+        color: #ccc;
+        background: #000;
+        height: 100%;
+        padding: 0p;
+        .header-text {
+            padding-top: 60px;
+            padding-bottom: 20px;
+        .header-desc {
+            color: rgba(204,204,204,.75);
+            line-height: 24px;
+            text-align: center;
+            font-size: 16px;
+            @extend body-font;
+            font-weight: 400;
+            letter-spacing: 0em;
+        }
+        }
+    }
+    .header-heading {
+        @extend body-font;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 5px;
+        letter-spacing: 0.01em;
+        color: #ccc;
+    }
+    .native-base, .strap-mobile, .strap-ui {
+        font-size: 14px;
+        color: #FFF;
+        &:hover {
+            color: #f70c36;
+        }
+    }
+    .start-angular, .start-react, .start-meteor, .start-laravel {
+        color: #ccc;
+        font-size: 14px;
+        &:hover, &:focus {
+            color: #f70c36;
+        }
+    }
+    .icon-hang {
+        color: #ccc;
+        margin-top: 35px;
+        font-size: 2em;
+        font-weight: 300px;
+    }
+    .icon-hang:hover {
+        color: #ccc;
+    }
+    // ===================== video =================
+    video {
+        width: 100%;
+        transition: 1s opacity;
+    }
+    .video-wrap {
+        padding: 0px;
+    }
+    .pseudo {
+        height: 76px;
+        background: #FFF;
+        width: 100%;
+    }
+    // =================== overview ================
+    .overview-index-2 {
+        background: @white;
+        padding-top: 76px;
+        padding-bottom: 76px;
+
+        .overview-heading {
+            line-height: 40px;
+            font-size: 30px;
+            @extend body-font;
+            font-weight: 700;
+            color: @text-color;
+            margin: 0 0 10px;
+            margin-bottom: 15px;
+        }
+        .overview-desc {
+            color: rgba(0,0,0,.75);
+            line-height: 28px;
+            font-size: 18px;
+            @extend body-font;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+    .more-about {
+        padding: 15px 45px;
+        background: #FFF;
+        border: 2px solid @text-color;
+        -webkit-border-radius: 25px;
+            border-radius: 25px;
+        text-transform: uppercase; 
+        color: @text-color;
+        margin-top: 35px;
+        font-size: 18px;
+        @extend heading-font;
+        &:hover {
+            background: @text-color;
+            color: #fff;
+            border: 2px solid @text-color;
+        }     
+    }
+    .cutomer {
+        text-align: center;
+    }
+
+    // ============================ product ====================
+    .product {
+        background: @gray;
+        padding-top: 54px;
+        padding-bottom: 34px;
+    }
+    .more-service {
+        margin-top: 25px;
+    }
+    // ======================= services =================
+    .service-margin {
+        margin-top: 30px;
+    }
+    .service {
+        background: @white;
+        padding-top: 34px;
+        padding-bottom: 34px;
+    }
+
+    // =================== technology ===================
+    .tech-column {
+        padding-left: 15px !important;
+        margin-bottom: 15px;
+    }
+
+    // ================ footer =================
+    .number-pro {
+        color: #999;
+        font-size: 18px;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        display: table-cell;
+        vertical-align: left;
+        padding-top: 10px;
+    }
+
+    .number-pro > .pull-right {
+        float: left !important;
+    }
+     // =================== overview ================
+    .overview-index-2 {
+        background: @white;
+        padding-top: 10px;
+        padding-bottom: 76px;
+
+        .overview-heading {
+            line-height: 40px;
+            font-size: 30px;
+            @extend body-font;
+            font-weight: 700;
+            color: @text-color;
+            margin: 0 0 10px;
+            margin-bottom: 15px;
+        }
+        .overview-desc {
+            color: rgba(0,0,0,.75);
+            line-height: 28px;
+            font-size: 18px;
+            @extend body-font;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+    .more-about {
+        padding: 15px 45px;
+        background: #FFF;
+        border: 2px solid @text-color;
+        -webkit-border-radius: 25px;
+            border-radius: 25px;
+        text-transform: uppercase; 
+        color: @text-color;
+        margin-top: 35px;
+        font-size: 18px;
+        @extend heading-font;
+        &:hover {
+            background: @text-color;
+            color: #fff;
+            border: 2px solid @text-color;
+        }     
+    }
+    .more-service {
+        padding: 15px;
+    }
+}
+// /* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 321px) and (max-width : 480px)   {
+
+    .navbar-default {
+        border-bottom: 1px solid #3b3a39;
+        background: @navbar-custom;
+        height: 60px;
+        .navbar-brand {
+            color: @brand-primary;
+            padding-top: 15px;
+
+            &.active,
+            &:active,
+            &:focus,
+            &:hover {
+                cursor: pointer;
+            }
+
+            .logo-img {
+                height: 30px;
+                margin-top: 0px;
+            }
+        }
+        a.navbar-brand {
+            padding-top: 0px;
+        }
+    }
+    .navbar-default .navbar-collapse {
+        border: 0px solid;
+    }
+
+    .nav {
+        padding-top: 38px;
+        li {
+          a {
+            @extend heading-font;
+            line-height: 22px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+            &:focus,
+            &:hover {
+                color: #FFF;
+                outline: none;
+                border-bottom: 3px solid @brand-primary;
+            }
+          }
+        }
+    }
+    .navbar-nav {
+        margin: 0px -15px;
+        border: 0px solid;
+    }
+
+
+    // ============== header ====================
+    .header {
+        padding: 0px;
+        .header-text {
+            padding: 90px 5px 20px 5px;
+        }
+        .header-desc {
+            margin-bottom: 5px;
+            color: rgba(204,204,204,.75);
+            line-height: 28px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 400;
+            letter-spacing: 0.01em;
+        }
+    }
+    .header-heading {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 5px;
+        letter-spacing: 0.01em;
+        color: #ccc;
+    }
+    .native-base, .strap-mobile, .strap-ui {
+        font-size: 14px;
+        color: #FFF;
+        &:hover {
+            color: #f70c36;
+        }
+    }
+    .start-angular, .start-react, .start-meteor, .start-laravel {
+        color: #ccc;
+        font-size: 14px;
+        &:hover, &:focus {
+            color: #f70c36;
+        }
+    }
+    .icon-hang {
+        color: #ccc;
+        margin-top: 35px;
+        font-size: 2em;
+        font-weight: 300px;
+    }
+    .icon-hang:hover {
+        color: #ccc;
+    }
+    // ===================== video =================
+    video {
+        width: 100%;
+        transition: 1s opacity;
+    }
+    .video-wrap {
+        padding: 0px;
+    }
+    .pseudo {
+        height: 76px;
+        background: #FFF;
+        width: 100%;
+    }
+    // =================== overview ================
+    .overview-index-2 {
+        background: @white;
+        padding-top: 10px;
+        padding-bottom: 76px;
+
+        .overview-heading {
+            line-height: 40px;
+            font-size: 30px;
+            @extend body-font;
+            font-weight: 700;
+            color: @text-color;
+            margin: 0 0 10px;
+            margin-bottom: 15px;
+        }
+        .overview-desc {
+            color: rgba(0,0,0,.75);
+            line-height: 28px;
+            font-size: 18px;
+            @extend body-font;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+    .more-about {
+        padding: 15px 45px;
+        background: #FFF;
+        border: 2px solid @text-color;
+        -webkit-border-radius: 25px;
+            border-radius: 25px;
+        text-transform: uppercase; 
+        color: @text-color;
+        margin-top: 35px;
+        font-size: 18px;
+        @extend heading-font;
+        &:hover {
+            background: @text-color;
+            color: #fff;
+            border: 2px solid @text-color;
+        }     
+    }
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 481px) and (max-width : 768px) {  
+    .navbar-default {
+        border-bottom: 1px solid #3b3a39;
+        background: @navbar-custom;
+        height: 120px;
+        .navbar-brand {
+            color: @brand-primary;
+            padding-top: 15px;
+
+            &.active,
+            &:active,
+            &:focus,
+            &:hover {
+                cursor: pointer;
+            }
+
+            .logo-img {
+                height: 30px;
+                margin-top: 0px;
+            }
+        }
+        a.navbar-brand {
+            padding-top: 45px;
+        }
+    }
+    .navbar-default .navbar-collapse {
+        border: 0px solid;
+    }
+
+    .nav {
+        padding-top: 38px;
+        li {
+          a {
+            @extend heading-font;
+            line-height: 22px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+            &:focus,
+            &:hover {
+                color: #FFF;
+                outline: none;
+                border-bottom: 3px solid @brand-primary;
+            }
+          }
+        }
+    }
+    .navbar-nav {
+        margin: 0px -15px;
+        border: 0px solid;
+    }
+    // ============== header ====================
+    .header {
+        padding: 0px;
+        .header-text {
+            padding: 180px 5px 20px 5px;
+        }
+        .header-desc {
+            margin-bottom: 25px;
+            color: rgba(204,204,204,.75);
+            line-height: 32px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+        }
+    }
+    .header-heading {
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 36px;
+        margin-bottom: 15px;
+        letter-spacing: 0.02em;
+        color: #ccc;
+    }
+    .native-base, .strap-mobile, .strap-ui {
+        font-size: 20px;
+        color: #FFF;
+        &:hover {
+            color: #f70c36;
+        }
+    }
+    .start-angular, .start-react, .start-meteor, .start-laravel {
+        color: #ccc;
+        font-size: 20px;
+        &:hover, &:focus {
+            color: #f70c36;
+        }
+    }
+    .icon-hang {
+        color: #ccc;
+        margin-top: 35px;
+        font-size: 2em;
+        font-weight: 300px;
+    }
+    .icon-hang:hover {
+        color: #ccc;
+    }
+    // ===================== video =================
+    video {
+        width: 100%;
+        transition: 1s opacity;
+    }
+    .video-wrap {
+        padding: 0px;
+    }
+    .pseudo {
+        height: 76px;
+        background: #FFF;
+        width: 100%;
+    }
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}

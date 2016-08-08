@@ -13,66 +13,34 @@
 
 Route::get('/', function()
 {
-	return View::make('home');
+	return View::make('pages/home');
+});
+Route::get('/home', function()
+{
+	return View::make('pages/home');
 });
 
-Route::get('/charts', function()
+Route::get('/team', function()
 {
-	return View::make('mcharts');
+	return View::make('pages/team');
 });
-
-Route::get('/tables', function()
+Route::get('/technology', function()
 {
-	return View::make('table');
+	return View::make('pages/technology');
 });
-
-Route::get('/forms', function()
+Route::get('/contact', function()
 {
-	return View::make('form');
+	return View::make('pages/contact');
 });
-
-Route::get('/grid', function()
+Route::get('/open-source', function()
 {
-	return View::make('grid');
+	return View::make('pages/open-source');
 });
-
-Route::get('/buttons', function()
+Route::get('/seperate-page', function()
 {
-	return View::make('buttons');
+	return View::make('pages/seperate-page');
 });
-
-
-Route::get('/icons', function()
+Route::get('/service', function()
 {
-	return View::make('icons');
-});
-
-Route::get('/panels', function()
-{
-	return View::make('panel');
-});
-
-Route::get('/typography', function()
-{
-	return View::make('typography');
-});
-
-Route::get('/notifications', function()
-{
-	return View::make('notifications');
-});
-
-Route::get('/blank', function()
-{
-	return View::make('blank');
-});
-
-Route::get('/login', function()
-{
-	return View::make('login');
-});
-
-Route::get('/documentation', function()
-{
-	return View::make('documentation');
+	return View::make('pages/service');
 });
