@@ -13,66 +13,46 @@
 
 Route::get('/', function()
 {
-	return View::make('home');
+	return View::make('pages/home');
+});
+Route::get('/home', function()
+{
+	return View::make('pages/home');
 });
 
-Route::get('/charts', function()
+Route::get('/team', function()
 {
-	return View::make('mcharts');
+	return View::make('pages/team');
 });
-
-Route::get('/tables', function()
+Route::get('/technology', function()
 {
-	return View::make('table');
+	return View::make('pages/technology');
 });
-
-Route::get('/forms', function()
+Route::get('/contact', function()
 {
-	return View::make('form');
+	return View::make('pages/contact');
 });
-
-Route::get('/grid', function()
+Route::get('/open-source', function()
 {
-	return View::make('grid');
+	return View::make('pages/open-source');
 });
-
-Route::get('/buttons', function()
+Route::get('/react', function()
 {
-	return View::make('buttons');
+	return View::make('pages/react-native');
 });
-
-
-Route::get('/icons', function()
+Route::get('/angular', function()
 {
-	return View::make('icons');
+	return View::make('pages/angular');
 });
-
-Route::get('/panels', function()
+Route::get('/node', function()
 {
-	return View::make('panel');
+	return View::make('pages/node');
 });
-
-Route::get('/typography', function()
+Route::get('/laravel', function()
 {
-	return View::make('typography');
+	return View::make('pages/laravel');
 });
-
-Route::get('/notifications', function()
+Route::get('/service', function()
 {
-	return View::make('notifications');
-});
-
-Route::get('/blank', function()
-{
-	return View::make('blank');
-});
-
-Route::get('/login', function()
-{
-	return View::make('login');
-});
-
-Route::get('/documentation', function()
-{
-	return View::make('documentation');
+	return View::make('pages/service');
 });
